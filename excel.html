@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Excel</title>
+    <link rel="stylesheet" href="excel.css" />
+  </head>
+  <body>
+    <h1>내가 웹에서 쓰려고 만든 엑셀</h1>
+    <table id="excelTable">
+      <thead>
+        <tr>
+          <th>
+            A <button class="sort-btn" data-col-index="0">⇅</button
+            ><button class="filter-btn" data-col-index="0">Filtering</button>
+          </th>
+          <th>
+            B <button class="sort-btn" data-col-index="1">⇅</button
+            ><button class="filter-btn" data-col-index="1">Filtering</button>
+          </th>
+          <th>
+            C <button class="sort-btn" data-col-index="2">⇅</button
+            ><button class="filter-btn" data-col-index="2">Filtering</button>
+          </th>
+          <th>
+            D <button class="sort-btn" data-col-index="3">⇅</button
+            ><button class="filter-btn" data-col-index="3">Filtering</button>
+          </th>
+          <th>
+            E <button class="sort-btn" data-col-index="4">⇅</button
+            ><button class="filter-btn" data-col-index="4">Filtering</button>
+          </th>
+          <th>
+            F <button class="sort-btn" data-col-index="5">⇅</button
+            ><button class="filter-btn" data-col-index="5">Filtering</button>
+          </th>
+          <th>
+            G <button class="sort-btn" data-col-index="6">⇅</button
+            ><button class="filter-btn" data-col-index="6">Filtering</button>
+          </th>
+          <th>
+            H <button class="sort-btn" data-col-index="7">⇅</button
+            ><button class="filter-btn" data-col-index="7">Filtering</button>
+          </th>
+          <th>
+            I <button class="sort-btn" data-col-index="8">⇅</button
+            ><button class="filter-btn" data-col-index="8">Filtering</button>
+          </th>
+          <th>
+            J <button class="sort-btn" data-col-index="9">⇅</button
+            ><button class="filter-btn" data-col-index="9">Filtering</button>
+          </th>
+          <th>
+            K <button class="sort-btn" data-col-index="10">⇅</button
+            ><button class="filter-btn" data-col-index="10">Filtering</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="filterModal" class="filter-modal" style="display: none">
+      <div class="filter-header">
+        <input type="text" id="filterSearch" placeholder="검색..." />
+      </div>
+      <ul id="filterOptions"></ul>
+      <div class="filter-actions">
+        <button id="applyFilter">적용</button>
+        <button id="clearFilter">초기화</button>
+        <button id="closeFilter">닫기</button>
+      </div>
+    </div>
+
+    <script src="excel.js"></script>
+  </body>
+</html>
